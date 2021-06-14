@@ -279,9 +279,14 @@ extension ChatViewController:InputBarAccessoryViewDelegate{
         if isNewConversation{
             DatabaseManager.shared.createNewConversation(with: otherUserEmail, firstMessage: message, name: self.title ?? "User", completion: { [weak self]success in
                 if success{
+                    self?.isNewConversation = false
+                    let newConversationId = "conversation_\(message.messageId)"
+                    
+                    self?.listenForMessages(id: newConversationId)
+                    
                     self?.messageInputBar.inputTextView.text = nil
                     print("message sent")
-                    self?.isNewConversation = false
+                    
                 }
                 else{
                     print("Message failed to send")

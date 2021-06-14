@@ -75,7 +75,7 @@ class ConversationsViewController: UIViewController {
             else{
                 strongSelf.createNewConversation(result: result)
             }
-            self?.createNewConversation(result: result)
+            
         }
         
         let navVC = UINavigationController(rootViewController: vc)
