@@ -24,7 +24,7 @@ class RegisterViewController: UIViewController {
         field.returnKeyType = .continue
         field.layer.cornerRadius = 10
         field.layer.borderWidth = 1
-        
+        field.backgroundColor = .secondarySystemBackground
         field.placeholder = "Your First Name..."
         return field
     }()
@@ -35,7 +35,7 @@ class RegisterViewController: UIViewController {
         field.returnKeyType = .continue
         field.layer.cornerRadius = 10
         field.layer.borderWidth = 1
-        
+        field.backgroundColor = .secondarySystemBackground
         field.placeholder = "Your Last Name..."
         return field
     }()
@@ -46,7 +46,7 @@ class RegisterViewController: UIViewController {
         field.returnKeyType = .continue
         field.layer.cornerRadius = 10
         field.layer.borderWidth = 1
-        
+        field.backgroundColor = .secondarySystemBackground
         field.placeholder = "Your Email Address..."
         return field
     }()
@@ -55,7 +55,7 @@ class RegisterViewController: UIViewController {
         field.autocapitalizationType = .none
         field.autocorrectionType = .no
         field.returnKeyType = .done
-        
+        field.backgroundColor = .secondarySystemBackground
         field.layer.cornerRadius = 10
         field.layer.borderWidth = 1
         field.isSecureTextEntry = true
@@ -66,7 +66,7 @@ class RegisterViewController: UIViewController {
         let button = UIButton()
         button.setTitle("Register", for: .normal)
         button.backgroundColor = .systemGreen
-        button.setTitleColor(.white, for: .normal)
+        button.setTitleColor(.secondarySystemBackground, for: .normal)
         button.layer.cornerRadius = 10
         button.layer.masksToBounds = true
         button.titleLabel?.font = .systemFont(ofSize:20, weight: . bold)
@@ -85,7 +85,7 @@ class RegisterViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
+        view.backgroundColor = .systemBackground
         title = "Log In"
         // Do any additional setup after loading the view.
        

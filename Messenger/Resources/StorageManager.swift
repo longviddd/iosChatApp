@@ -33,13 +33,13 @@ final class StorageManager{
     }
     ///Upload image that will be sent in a convo
     public func uploadMessagePhoto(with data: Data, fileName: String, completion: @escaping UploadPictureCompletion) {
-        storage.child("messages_videos/\(fileName)").putData(data, metadata: nil, completion: {[weak self]metadata, error in
+        storage.child("messages_images/\(fileName)").putData(data, metadata: nil, completion: {[weak self]metadata, error in
             guard error == nil else{
                 print("failed to upload image")
                 completion(.failure(StorageErrors.failedToUpload))
                 return
             }
-            self?.storage.child("messages_videoss/\(fileName)").downloadURL(completion: {url, error in
+            self?.storage.child("messages_images/\(fileName)").downloadURL(completion: {url, error in
                 guard let url = url else{
                     print("")
                     completion(.failure(StorageErrors.failedToGetDownloadUrl))
@@ -59,7 +59,7 @@ final class StorageManager{
                 completion(.failure(StorageErrors.failedToUpload))
                 return
             }
-            self.storage.child("messages_images/\(fileName)").downloadURL(completion: {url, error in
+            self.storage.child("messages_videos/\(fileName)").downloadURL(completion: {url, error in
                 guard let url = url else{
                     print("")
                     completion(.failure(StorageErrors.failedToGetDownloadUrl))

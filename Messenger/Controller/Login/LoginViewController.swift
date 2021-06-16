@@ -11,6 +11,7 @@ import FBSDKLoginKit
 import GoogleSignIn
 import JGProgressHUD
 
+
 class LoginViewController: UIViewController {
     private let spinner = JGProgressHUD(style: .dark)
     
@@ -27,7 +28,7 @@ class LoginViewController: UIViewController {
         field.returnKeyType = .continue
         field.layer.cornerRadius = 10
         field.layer.borderWidth = 1
-        
+        field.backgroundColor = .secondarySystemBackground
         field.placeholder = "Your Email Address..."
         return field
     }()
@@ -75,7 +76,7 @@ class LoginViewController: UIViewController {
             }
             strongSelf.navigationController?.dismiss(animated: true, completion: nil)
         })
-        view.backgroundColor = .white
+        view.backgroundColor = .systemBackground
         title = "Log In"
         GIDSignIn.sharedInstance()?.presentingViewController = self
         // Do any additional setup after loading the view.

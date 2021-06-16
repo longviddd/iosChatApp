@@ -20,13 +20,13 @@
 		703171E226617D01004B5F91 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703171E126617D01004B5F91 /* LoginViewController.swift */; };
 		703171E426617D0C004B5F91 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703171E326617D0C004B5F91 /* RegisterViewController.swift */; };
 		703171E626617F2A004B5F91 /* PhotoViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703171E526617F2A004B5F91 /* PhotoViewerViewController.swift */; };
-		703171E826617F4F004B5F91 /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703171E726617F4F004B5F91 /* VideoPlayerViewController.swift */; };
 		703171EA26617F6F004B5F91 /* NewConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703171E926617F6F004B5F91 /* NewConversationViewController.swift */; };
 		703171EC26617F89004B5F91 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703171EB26617F89004B5F91 /* ProfileViewController.swift */; };
 		706A6F0E26657B1A00D33C34 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706A6F0D26657B1A00D33C34 /* Extensions.swift */; };
 		706C42072667285C0087C23D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 706C42062667285C0087C23D /* GoogleService-Info.plist */; };
 		70A26F8826741B7B0026F590 /* NewConversationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A26F8726741B7B0026F590 /* NewConversationCell.swift */; };
 		70BBB7BB266C1430003A4ECE /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70BBB7BA266C1430003A4ECE /* StorageManager.swift */; };
+		70CF5757267839B100E2C1C0 /* LocationPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CF5756267839B100E2C1C0 /* LocationPickerViewController.swift */; };
 		70DBE488266FFC6D0012A79B /* ConversationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DBE487266FFC6D0012A79B /* ConversationTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -46,13 +46,13 @@
 		703171E126617D01004B5F91 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		703171E326617D0C004B5F91 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		703171E526617F2A004B5F91 /* PhotoViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewerViewController.swift; sourceTree = "<group>"; };
-		703171E726617F4F004B5F91 /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
 		703171E926617F6F004B5F91 /* NewConversationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConversationViewController.swift; sourceTree = "<group>"; };
 		703171EB26617F89004B5F91 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		706A6F0D26657B1A00D33C34 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		706C42062667285C0087C23D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		70A26F8726741B7B0026F590 /* NewConversationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConversationCell.swift; sourceTree = "<group>"; };
 		70BBB7BA266C1430003A4ECE /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		70CF5756267839B100E2C1C0 /* LocationPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPickerViewController.swift; sourceTree = "<group>"; };
 		70DBE487266FFC6D0012A79B /* ConversationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationTableViewCell.swift; sourceTree = "<group>"; };
 		DEC8A1CE146A6EF1BB9CBAAF /* Pods_Messenger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Messenger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE9FAD7A0E52317EEB480C98 /* Pods-Messenger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Messenger.release.xcconfig"; path = "Target Support Files/Pods-Messenger/Pods-Messenger.release.xcconfig"; sourceTree = "<group>"; };
@@ -146,10 +146,10 @@
 				706A6F0C266566D900D33C34 /* Login */,
 				703171C8266179BE004B5F91 /* ConversationsViewController.swift */,
 				703171E526617F2A004B5F91 /* PhotoViewerViewController.swift */,
-				703171E726617F4F004B5F91 /* VideoPlayerViewController.swift */,
 				703171E926617F6F004B5F91 /* NewConversationViewController.swift */,
 				703171EB26617F89004B5F91 /* ProfileViewController.swift */,
 				702CE4BC266B509B005AB67D /* ChatViewController.swift */,
+				70CF5756267839B100E2C1C0 /* LocationPickerViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -325,11 +325,11 @@
 				703171C9266179BE004B5F91 /* ConversationsViewController.swift in Sources */,
 				703171C5266179BE004B5F91 /* AppDelegate.swift in Sources */,
 				703171EC26617F89004B5F91 /* ProfileViewController.swift in Sources */,
+				70CF5757267839B100E2C1C0 /* LocationPickerViewController.swift in Sources */,
 				70BBB7BB266C1430003A4ECE /* StorageManager.swift in Sources */,
 				703171C7266179BE004B5F91 /* SceneDelegate.swift in Sources */,
 				703171E626617F2A004B5F91 /* PhotoViewerViewController.swift in Sources */,
 				703171E426617D0C004B5F91 /* RegisterViewController.swift in Sources */,
-				703171E826617F4F004B5F91 /* VideoPlayerViewController.swift in Sources */,
 				703171EA26617F6F004B5F91 /* NewConversationViewController.swift in Sources */,
 				70A26F8826741B7B0026F590 /* NewConversationCell.swift in Sources */,
 				7030B3FF2668749100D84562 /* DatabaseManager.swift in Sources */,
